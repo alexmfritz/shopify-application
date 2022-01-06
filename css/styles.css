@@ -1,0 +1,77 @@
+* {
+  font-family: 'Space Mono', monospace;
+}
+
+html, body {
+  height: 100%;
+}
+
+main, .img-card-scroll, .img-card, 
+.img-bio, .img-headline {
+  display: flex;
+}
+
+main, .img-card-scroll,
+.img-card, .img-bio {
+  flex-direction: column;
+}
+
+main {
+  background-color: rgb(235, 235, 235);
+}
+
+main, .img-bio {
+  padding: 3%;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+h1 ~ p {
+  font-size: 40px;
+}
+
+h1 ~ p, .img-date {
+  color: grey;
+}
+
+p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.img-card-scroll {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.img-bio {
+  background-color: white;
+}
+
+.img-title {
+  font-size: 36px;
+}
+
+.img-date { 
+  font-size: 30px;
+}
+
+.fa-heart {
+  color: red;
+  text-align: right;
+}
+
+@media screen and (max-width: 375px) {
+  .img-card-scroll {
+    width: 95%;
+  }
+
+  .img {
+    height: auto;
+    max-width: 30%;
+  }
+}
